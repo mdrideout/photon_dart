@@ -2,6 +2,9 @@
 
 Use the Photon WASM Image Processing Library from Dart Web
 
+# TODO:
+Pull from the npm library README into this readme.
+
 ## Getting Started
 
 This project is a starting point for a Flutter

@@ -31,7 +31,7 @@ abstract class PhotonDartPlatform extends PlatformInterface {
   }
 
   /// WASM Test
-  Future<String?> wasmTest(String base64Image) {
+  Future<String?> wasmTest(String base64Image, int width, int height) {
     throw UnimplementedError('wasmTest() has not been implemented on this platform. This is a web-only plugin.');
   }
 

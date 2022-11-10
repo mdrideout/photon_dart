@@ -13,4 +13,4 @@ external void jsTestAlert(String alertMessage);
 /// Provide an image in base64 string format, and the WASM image
 /// processor will apply a filter and return the image in base64 string format.
 @JS('jsWasmTest')
-external Future<String> jsWasmTest(String base64Image);
+external Future<String> jsWasmTest(String base64Image, int width, int height);

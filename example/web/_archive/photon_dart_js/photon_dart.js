@@ -1,12 +1,3 @@
-// import photon from "@silvia-odwyer/photon";
-
-// import_js_library??
-// TODO: Potentially need to make this package a module / library to be imported.
-// TODO: Also potentially need to just import the photon library into the assets folder for use
-
-// TODO: Also may just need to be run on a server? Test in a separate local.html instance
-// TODO: Does it need to be served from something like a webpack server?
-
 function jsTestAlert(message) {
   alert(message);
 }

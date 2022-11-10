@@ -16,7 +16,7 @@ class MethodChannelPhotonDart extends PhotonDartPlatform {
   }
 
   @override
-  Future<String?> wasmTest(String base64Image) async {
+  Future<String?> wasmTest(String base64Image, int width, int height) async {
     final updatedBase64Image = await methodChannel.invokeMethod<String>('wasmTest', base64Image);
     return updatedBase64Image;
   }

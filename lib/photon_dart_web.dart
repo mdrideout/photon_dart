@@ -29,9 +29,9 @@ class PhotonDartWeb extends PhotonDartPlatform {
 
   /// WASM Test
   @override
-  Future<String> wasmTest(String base64Image) async {
+  Future<String?> wasmTest(String base64Image, int width, int height) async {
     debugPrint("Calling jsWasmTest JavaScript method.");
-    return await promiseToFuture(jsWasmTest(base64Image));
+    return await promiseToFuture(jsWasmTest(base64Image, width, height));
   }
 
   /// Returns a [String] containing the version of the platform.
