@@ -11,14 +11,12 @@ The demo is powered by a vite server.
 
 ## Running the npm demo:
 
-This is an html / JavaScript demo of the WASM functionality.
+Go to `photon_js_src` folder. This is the html / JavaScript source and demo of the npm WASM functionality.
 
 ```bash
 # start the vite server, then visit the indicated URL to test the image processing.
 $ npm start dev
 ```
-
-_Note: Vite does not build the dart-ready code since it builds for reactive hosted applications._.
 
 # Installation For Your Flutter App
 
@@ -43,6 +41,9 @@ TypeScript project into JavaScript files with compatibility.
 **Execute the build command from the `photon_js_src` folder**
 
 ```bash
+# cd into the source folder
+$ cd photon_js_src
+
 # Install node modules
 $ npm install
 
@@ -52,7 +53,7 @@ $ npm run build
 
 You should find the build's output inside the Flutter project's `web` folder, at `web/photon_js_dist`.
 
-### 4. Add the <script> tag to the Flutter project's index.html
+### 4. Add the \<script> tag to the Flutter project's index.html
 
 Open the `web/index.html` file and add the following `<script>` tag before the `flutter.js` script tag.
 
@@ -60,7 +61,7 @@ Open the `web/index.html` file and add the following `<script>` tag before the `
 
 ```html
 <!-- This script contains the functions executable against Photon -->
-<script src="photon_dart_js/photon_dart.js"></script>
+<script src="photon_js_dist/index.js"></script>
 
 <!-- This script adds the flutter initialization JS code -->
 <script src="flutter.js" defer></script>
@@ -70,4 +71,4 @@ You will need to stop any app instance and rebuild for web anytime changes are m
 
 ### 5. Pass a base64 encoded image to a photon_dart function
 
-[TODO]
+[TODO] add more example instructions
